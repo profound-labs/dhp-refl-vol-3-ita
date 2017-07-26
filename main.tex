@@ -1,0 +1,106 @@
+\documentclass{aruno-gist}
+
+\usepackage{mylayout}
+
+\webversionfalse
+
+%% Details of the book
+%% ===================
+
+\title{Riflessioni sul Dhammapada}
+\subtitle{52 strofe del Dhammapada con commenti di Ajahn Munindo}
+\author{Ajahn Munindo}
+\date{2017-07-25}
+\editionInfo{\textit{Prima edizione}, 5.000 copie, prodotte in Malesia, 2018}
+\ISBN{000-0-000000-00-0}% TODO ISBN
+
+% \hyphenation{prep-a-ra-tion belief attrac-tive under-stand-ing moment}
+
+\begin{document}
+
+\ifwebversion
+\webcover{%
+\includegraphics[width=\paperwidth]{./webcover.jpg}
+}
+\else
+
+% Yellow color page
+% Pantone 124M
+% CMYK 0, 27, 100, 8
+
+\thispagestyle{empty}
+\mbox{}
+\pagecolor{frontyellow}
+\newpage
+\thispagestyle{empty}
+\pagecolor{white}
+\mbox{}
+\newpage
+
+\fi
+
+%% Frontmatter
+%% ===========
+
+\frontmatter*
+\pagestyle{empty}
+
+\midsloppy
+
+\input{./manuscript/tex/frontverse.tex}
+
+\input{./manuscript/tex/acknowledgement.tex}
+
+\input{./manuscript/tex/titlepage.tex}
+
+\input{./manuscript/tex/copyright.tex}
+
+\chapterstyle{frontmatter}
+
+\input{./manuscript/tex/preface-vol-one.tex}
+
+\input{./manuscript/tex/preface-vol-three.tex}
+
+%% Main matter
+%% ===========
+
+\mainmatter*
+
+\input{./manuscript/tex/booktitle.tex}
+
+\setcounter{chapter}{0}
+\setcounter{page}{1}
+\pagestyle{normalpage}
+\chapterstyle{mainmatter}
+
+\setlength{\parskip}{0.6\baselineskip}
+\setlength{\parindent}{0pt}
+
+\input{./manuscript/tex/versepages.tex}
+
+\backmatter
+
+\bookmarksetup{startatroot}
+
+\chapterstyle{backmatter}
+\newgeometry{vmargin=15mm, hmargin=10mm}
+
+% FIXME: remove page number before index page
+
+\input{./manuscript/tex/index-of-first-lines.tex}
+
+%% Gift of Dhamma
+%% --------------
+
+\cleartorecto
+\thispagestyle{plain}
+\input{./manuscript/tex/gift-of-dhamma.tex}
+
+%% Copyright details
+%% -----------------
+
+\cleartoverso
+\thispagestyle{plain}
+\input{./manuscript/tex/copyright-details.tex}
+
+\end{document}

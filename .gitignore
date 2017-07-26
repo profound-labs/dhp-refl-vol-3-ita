@@ -1,0 +1,9 @@
+*.swp
+*.aux
+*.log
+*.toc
+auto/
+TAGS
+index
+main.pdf
+cover.pdf

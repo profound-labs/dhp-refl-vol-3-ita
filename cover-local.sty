@@ -1,0 +1,24 @@
+\ProvidesPackage{cover-local}
+
+\usepackage{soul}
+
+\usepackage{graphicx}
+\graphicspath{{./assets/images/}}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={TeX}}
+\setmainfont[
+    ItalicFont = Shaker 2 Light Italic
+]{Shaker 2 Light}
+
+\newfontfamily\titleFont{Shaker 2 Light}
+\newfontfamily\authorFont{Shaker 2 Light}
+\newfontfamily\volumeFont{Shaker 2 Regular}
+
+\sodef\soTitle{}{.1em}{.5em plus.1em}{.1em plus.1em minus.1em}
+\sodef\soAuthor{}{.1em}{.5em plus.1em}{.1em plus.1em minus.1em}
+\sodef\soVolume{}{.4em}{1.2em plus.1em}{.1em plus.1em minus.1em}
+
+\newcommand\titleSize{\@setfontsize\titleSize{18}{19}}
+\newcommand\volumeSize{\@setfontsize\volumeSize{10.5}{11}}
+

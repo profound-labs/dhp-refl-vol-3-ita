@@ -1,0 +1,107 @@
+\documentclass[
+  pageWidth = 135mm,
+  pageHeight = 120mm,
+  spineWidth = 7.5mm,
+  %varnishmask,
+  showtrims,
+  %showframe,
+]{anecdote-cover}
+
+% spine width:
+% (122 pages / 2) * 0.106 + 1mm = 7.466mm
+
+\usepackage{cover-local}
+
+\makeatletter
+
+% Use \colorbox{bgcolor}{ ... } from xcolor for a page with background color.
+
+% === Back ============================================================
+
+\SetCoverBack{%
+\ifvarnishmask\mbox{}%
+\else
+\centering
+
+\mbox{}\vfill
+
+\includegraphics[height=15mm,keepaspectratio]{buddho.jpg}
+\vspace*{3mm}
+
+ARUNO PUBLICATIONS
+\vspace*{4mm}
+
+\emph{zur freien verteilung}
+\vspace*{9mm}
+\fi}
+
+% === Spine ===========================================================
+
+\SetCoverSpine{%
+\ifvarnishmask\mbox{}%
+\else
+%
+\hspace*{10mm}%
+%
+Ajahn Munindo\hfill Dhammapada-Reflexionen\hspace*{4mm}%
+%
+{\volumeFont\volumeSize\color[gray]{0.75} Band 1.}%
+%
+\hspace*{10mm}%
+%
+\fi}
+
+% === Set Coffins =====================================================
+
+\SetCoverCoffins
+
+% === Front ===========================================================
+
+\NewCoffin\Photo
+\NewCoffin\Title
+\NewCoffin\Author
+
+\newlength\photoWidth
+\newlength\authorWidth
+
+\setlength{\photoWidth}{95mm}
+\setlength{\authorWidth}{38mm}
+
+\SetHorizontalCoffin\Photo{%
+  \placeholder{\includegraphics[width=\photoWidth,keepaspectratio]{cover_photo.jpg}}%
+}
+
+\SetHorizontalCoffin\Title{%
+  \resizebox{\photoWidth}{!}{\titleFont\titleSize\color[gray]{0.35}\soTitle{Riflessioni sul Dhammapada}}%
+}
+
+\SetHorizontalCoffin\Author{%
+\begin{minipage}{\linewidth}%
+  \centering
+  \resizebox{\authorWidth}{!}{\authorFont\color[gray]{0.35}\soAuthor{Ajahn Munindo}}\\
+  {\color[gray]{0.3}\rule[6pt]{\authorWidth}{0.25pt}}\\
+  \vspace*{-7pt}%
+  {\volumeFont\volumeSize\color[gray]{0.75}\soVolume{Volume Terzo}}
+\end{minipage}%
+}
+
+\JoinCoffins*\coverFront[hc,t]\Photo[hc,b](0pt,-61.5mm)
+
+\ifvarnishmask\relax
+\else
+\JoinCoffins*\coverFront[hc,t]\Title[hc,t](0pt,-64mm)
+\JoinCoffins*\coverFront[hc,t]\Author[hc,t](0pt,-102mm)
+\fi
+
+% === Join Coffins ====================================================
+
+\JoinCoverCoffins
+
+\makeatother
+
+\begin{document}
+
+\CoverPage
+
+\end{document}
+

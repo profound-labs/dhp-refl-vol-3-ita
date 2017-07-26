@@ -1,0 +1,25 @@
+\ProvidesPackage{mylayout}
+
+% customizations over the general document class.
+
+\usepackage[italian]{babel}
+
+\newcommand{\dhpversenumsize}{\@setfontsize\dhpversenumsize{11}{14.5}}
+\renewenvironment{dhpVerse}[1]
+{\def\verseref{\textit{s. {\small #1}}}
+\cleartoverso
+\begin{minipage}[c][\textheight][c]{\textwidth}
+\setlength{\parskip}{0.6\baselineskip}
+\setlength{\parindent}{0pt}
+\dhpversesize\versealign}
+{\par{\dhpversenumsize\verseref}
+\end{minipage}}
+
+\renewcommand{\versealign}{\centering}
+\setlength{\chapterskipoffset}{-\onelineskip}
+
+% Yellow color page
+% Pantone 124M
+% CMYK 0, 27, 100, 8
+
+\definecolor{frontyellow}{cmyk}{0,0.105,0.392,0.031}
