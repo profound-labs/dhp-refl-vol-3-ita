@@ -4,6 +4,8 @@ Italian translation of *Dhammapada Reflections Vol 3* by Ajahn Munindo
 
 Translated by Chandra Candiani
 
+Published by Edizioni Santacittarama
+
 Sources: <https://github.com/profound-labs/dhp-refl-vol-3-ita>
 
 ## Tasks
@@ -12,9 +14,9 @@ Sources: <https://github.com/profound-labs/dhp-refl-vol-3-ita>
 
 **1st edition, 2018**
 
-paperback: `000-0-000000-00-0`
+paperback: `978-88-85706-01-9`
 
-electronic: `000-0-000000-00-0`
+electronic: `978-88-85706-02-6`
 
 ## Fonts
 
@@ -39,7 +41,7 @@ Ebooks: [prophecy](https://github.com/profound-labs/prophecy)
 
 ## License
 
-Copyright &copy; 2018 Santacittarama Publications
+Copyright &copy; 2018 Associazione Santacittarama
 
 CC BY-NC-ND 4.0: Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale
 
