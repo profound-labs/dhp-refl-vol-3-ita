@@ -1,0 +1,21 @@
+
+<h1 style="text-align: center;">Riflessioni sul Dhammapada</h1>
+<h2 style="text-align: center; padding-bottom: 1em;">Vol. 3</h2>
+<% unless book.subtitle.nil? %><h2 style="text-align: center;"><%= book.subtitle %></h2><% end %>
+<h3 style="text-align: center;">by <%= book.author %></h3>
+
+<% unless book.publisher_logo.nil? %>
+<p style="text-align: center;"><img src="../images/<%= book.publisher_logo %>" alt="logo"/></p>
+<% end %>
+
+<p class="footnotesize" style="text-align: center; font-style: italic;">
+<% unless book.publisher.nil? %>
+  Published by <%= book.publisher %><br/>
+  <%= book.publisher_atag %><br/>
+<% end %>
+<% unless book.book_atag.nil? %>
+  Find out more about this book at<br/>
+  <%= book.book_atag %>
+<% end %>
+</p>
+

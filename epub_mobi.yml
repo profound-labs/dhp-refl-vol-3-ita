@@ -1,0 +1,41 @@
+date: 2017-10-12
+version: 'v1.0'
+
+# Epub and Mobi
+# =============
+
+bookid: "DhammapadaReflectionsVolumeThreeITA"
+
+lang: it
+
+# ISBN for the ebook editions
+ebook_isbn: "978-88-85706-02-6"
+
+# Level 1, 2, 3
+section_names: [ "", "", "" ]
+
+toc:
+  - { the_matter: frontmatter }
+  - { title: "Cover", src: 'cover.xhtml.erb', target: epub, layout: none, type: cover, linear: no }
+  - { title: "Titolo", src: 'titlepage.xhtml.erb', target: epub, type: title-page }
+  - { title: "Indice", src: 'toc.xhtml.erb', target: epub, type: toc }
+  - { title: "Prefazione, Vol 1", src: 'preface-vol-one.md', type: preface }
+  - { title: "Prefazione, Vol 3", src: 'preface-vol-three.md' }
+  - { title: "Titolo", src: 'titlepage.xhtml.erb', target: mobi, type: text }
+  - { title: "Indice", src: 'toc.xhtml.erb', target: mobi, type: toc }
+  - { the_matter: mainmatter, section_number: 1  }
+  - { title: "Opening", src: 'frontverse.md' }
+  - versepages.md
+  - { the_matter: backmatter  }
+  - { title: "Copyright", src: 'copyright.md.erb', type: copyright-page }
+
+cover_image: "cover.jpg"
+
+publisher: "Edizioni Santacittarama"
+publisher_atag: "<a href='http://www.santacittarama.org'>www.santacittarama.org</a>"
+book_atag: "<a href='http://fsbooks.org/'>www.fsbooks.org</a>"
+
+file_as: Munindo, Ajahn
+subject: RELIGION / Buddhism / Theravada
+source: http://fsbooks.org
+

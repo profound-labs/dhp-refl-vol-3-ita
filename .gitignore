@@ -2,7 +2,11 @@
 *.aux
 *.log
 *.toc
+assets/.sass-cache
 auto/
+build/
+publish/epub
+publish/mobi
 TAGS
 index
 main.pdf

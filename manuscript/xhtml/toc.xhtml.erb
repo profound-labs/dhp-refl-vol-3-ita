@@ -1,0 +1,25 @@
+
+<table border="0" cellspacing="0" cellpadding="0" class="toc">
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <h1 style="margin-left: 0; padding-left: 0;">Contents</h1>
+      </td>
+    </tr>
+<% book.chapters.each do |ch| %>
+<%= ch.to_toc_tr %>
+<% end %>
+    <tr>
+      <td class='section'>
+      </td>
+      <td class='separator'></td>
+      <td class='title mainmatter'>
+        <p>Index of Verses</p>
+        <%= book.verseindex_as_ul %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
