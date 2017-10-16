@@ -1,6 +1,13 @@
 # Riflessioni sul Dhammapada
 {:.book-title}
 
+*Come un fiore\\
+dal delizioso profumo\\
+è la parola saggia e amorevole\\
+accompagnata dalla retta azione.*
+
+Dhammapada strofa 52
+
 > La consapevolezza ricettiva apre alla vita\\
 > la fuga nella distrazione\\
 > è un sentiero di morte\\
