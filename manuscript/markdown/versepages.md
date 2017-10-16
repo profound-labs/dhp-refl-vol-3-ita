@@ -1,5 +1,5 @@
 # Riflessioni sul Dhammapada
-{:.book-title}
+{:.book-title #dhammapada-reflections}
 
 *Come un fiore\\
 dal delizioso profumo\\
